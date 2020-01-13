@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Upload image</string>
+    <string name="uploadImages">Set your image</string>
+    <string name="msg_loading">Loading...</string>
+    <string name="channel_name">Eslatma</string>
+    <string name="channel_description">File is successfully uploaded</string>
+    <string name="channel_description2">Error xatolik topilgan</string>
+
+</resources>

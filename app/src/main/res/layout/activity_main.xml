@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F6F4F7"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_above="@+id/liner2"
+
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        android:src="@drawable/images"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/liner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="9"
+        android:layout_alignParentBottom="true"
+       android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/create_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_choose"
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_camera_black_24dp"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take photo"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/choose_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/upload_back"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_cloud_upload_black_24dp"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upload image"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/show_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:background="@drawable/button_show"
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_image_black_24dp"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show images"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
