@@ -39,7 +39,6 @@ import uz.nisd.firstproject.uploadimage.Model.FileUpload;
 import uz.nisd.firstproject.uploadimage.Network.ApiUtils;
 import uz.nisd.firstproject.uploadimage.Network.FileService;
 
-
 import static uz.nisd.firstproject.uploadimage.App.CHANNEL_ID;
 import static uz.nisd.firstproject.uploadimage.App.CHANNEL_ID_2;
 
@@ -52,10 +51,12 @@ public class MainActivity extends AppCompatActivity {
     File file;
     private Bitmap bitmap;
     String imagePath;
+
     String[] permissions= new String[]{
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.CAMERA,
             Manifest.permission.READ_EXTERNAL_STORAGE};
+
 
 
     @Override

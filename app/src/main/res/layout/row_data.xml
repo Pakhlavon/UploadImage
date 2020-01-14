@@ -5,18 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:gravity="center"
+    android:background="#F3E0D1"
     android:layout_gravity="center"
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
 <ImageView
     android:id="@+id/imageview"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
     android:layout_gravity="center"
     android:src="@drawable/images"/>
 
@@ -25,6 +26,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="fdjhkfdf0"
+        android:layout_margin="10dp"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
         android:gravity="center"
         />
     </LinearLayout>
